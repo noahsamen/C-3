@@ -1,0 +1,33 @@
+#include <iostream>
+#include <limits>
+#include <cmath>
+int main() {
+  int y;
+  std::cout<<"Test the limit";
+  std::cout<<"\nThe range of this limit:"<<std::numeric_limits<short>::min()<<" to "<<std::numeric_limits<short>::max();
+  std::cout<<"\nThe 2nd range is:"<<std::numeric_limits<int>::min()<<" to "<<std::numeric_limits<int>::max();
+  std::cout<<"\nStatic:"<<static_cast<int>(y);
+  std::cout<<"\n---------------";
+  std::cout<<"\nTesting the math.";
+  double w {5.98};
+  std::cout<<"\nW floor value is: "<<std::floor(w);
+  std::cout<<"\nW ceil value is: "<<std::ceil(w);
+  double d {-9199421};
+  std::cout<<"\n---------------";
+  std::cout<<"\nAbsolute value";
+  std::cout<<"\nAbsolute is: "<<std::abs(d);
+  std::cout<<"\nAbsolute value of w is: "<<std::abs(w);
+  std::cout<<"\n----------------";
+  std::cout<<"\nPower option";
+  std::cout<<"\nPower of the first set: "<<std::pow(6,7);
+  std::cout<<"\nPower 2nd set is: "<<std::pow(9,7);
+  std::cout<<"\n-----------------";
+  std::cout<<"\nLog functions";
+  std::cout<<"\n1st Log value is: "<<std::log(56);
+  std::cout<<"\n2nd log funtions is: "<<std::log10(9);
+  std::cout<<"\n-----------------";
+  std::cout<<"\nRounding function";
+  std::cout<<"\nFirst rounding funtion is: "<<std::round(9.114);
+  std::cout<<"\nSecond rounding funtion is: "<<std::round(4.999);
+  std::cout<<"\nThird value is: "<<std::round(4.78);
+}
